@@ -3,22 +3,22 @@ import data
 from datetime import datetime
 import time
 
-async def main():
+def main():
     print(f"It's now {data.chromaticka_tabulka(0)}")
 
     print('Hello, World! 123')
     print(f"It's now {datetime.now()}")
-    async def foo():
+    def foo():
         while True:
             output = datetime.now()
             pyscript.write("myNum", output)
             output1 = Element("myNum1")
             output1.write(datetime.now())
-            await asyncio.sleep(1)
-    await asyncio.foo()
+            time.sleep(1)
+    foo()
 
 
         
         
 if __name__ == "__main__":
-    asyncio.run(main())        
+    main()        
