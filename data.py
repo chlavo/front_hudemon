@@ -1,5 +1,15 @@
+from collections import deque
+
 def chromaticka_stupnice():
     return ["c", "c#", "d", "d#", "e", "f", "f#", "g", "g#", "a", "a#", "h"]
+
+def chromaticka_tabulka(offset):
+    stupnice = deque(chromaticka_stupnice())
+    return [[stupnice.rotate(offset)],
+            [stupnice.rotate(offset + 4)],
+            [stupnice.rotate(offset + 7)],
+            [stupnice.rotate(offset + 10)]
+            ]
 
 def mod(mod):
     mody = { 1 : [1,0,1,0,1,1,0,1,0,1,0,1],     #[1,3,5,6,8,10,12]  "jonsky"
