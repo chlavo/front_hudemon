@@ -8,13 +8,13 @@ def main():
 
     print('Hello, World! 123')
     print(f"It's now {datetime.now()}")
-    def foo():
+    async def foo():
         while True:
             output = datetime.now()
             pyscript.write("myNum", output)
             output1 = Element("myNum1")
             output1.write(datetime.now())
-            time.sleep(1)
+            await asyncio.sleep(1)
     foo()
 
 
