@@ -1,7 +1,7 @@
 import asyncio
 import data
 from datetime import datetime
-import time
+
 
 async def main():
     print(f"It's now {data.chromaticka_tabulka(0)}")
@@ -22,5 +22,4 @@ async def main():
         
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
-    loop.close()
+    loop.create_task(main())
