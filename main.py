@@ -15,7 +15,7 @@ def main():
             output1 = Element("myNum1")
             output1.write(datetime.now())
             await asyncio.sleep(1)
-    foo()
+    asyncio.run(foo())
 
 
         
