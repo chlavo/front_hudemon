@@ -1,12 +1,13 @@
+import asyncio
 import data
+from datetime import datetime
+import time
 
 def main():
     print(f"It's now {data.chromaticka_tabulka(0)}")
-    from datetime import datetime
-    import time
+
     print('Hello, World! 123')
     print(f"It's now {datetime.now()}")
-    import asyncio
     async def foo():
         while True:
             output = datetime.now()
