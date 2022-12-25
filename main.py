@@ -3,7 +3,7 @@ import data
 from datetime import datetime
 import time
 
-def main():
+async def main():
     print(f"It's now {data.chromaticka_tabulka(0)}")
 
     print('Hello, World! 123')
@@ -15,7 +15,7 @@ def main():
             output1 = Element("myNum1")
             output1.write(datetime.now())
             await asyncio.sleep(1)
-    asyncio.run(foo())
+    await asyncio.foo()
 
 
         
