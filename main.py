@@ -20,6 +20,6 @@ async def main():
 
         
         
-if __name__ == "__main__":
+async def main_loop():
     loop = asyncio.get_event_loop()
     loop.create_task(main())
