@@ -13,8 +13,15 @@
       [[fetch]]
       from = "https://raw.githubusercontent.com/chlavo/front_hudemon/main/"
       files = ["data.py"]
+      [[fetch]]
+      from = "https://raw.githubusercontent.com/chlavo/front_hudemon/main/"
+      files = ["main.py"]
     </py-config>
-    <py-script src="main.py"></py-script>
+    <!-- <py-script src="main.py"></py-script> -->
+    <py-script>
+    import main
+    </py-script>
+    <py-repl auto-generate = "true"></py-repl> 
     <div id="myNum" style="background: gray;"></div>
     <div id="myNum1" style="background: gray;"></div>
   </body>
