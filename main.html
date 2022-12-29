@@ -20,7 +20,8 @@
     <!-- <py-script src="main.py"></py-script> -->
     <py-script>
     import main
-    main.main()
+    if __name__ == "__main__":
+      main.main_loop()
 
     </py-script>
     <py-repl auto-generate = "true"></py-repl> 
