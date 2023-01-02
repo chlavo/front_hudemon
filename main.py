@@ -17,7 +17,7 @@ async def main():
             await asyncio.sleep(1)
     await foo()
 
-
+#as
         
         
 if __name__ == "__main__":
