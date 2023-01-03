@@ -4,6 +4,8 @@ from datetime import datetime
 
 
 async def main():
+    await micropip.install(["matplotlib", "numpy"])
+
     print(f"It's now {data.chromaticka_tabulka(0)}")
 
     print('Hello, World! 123')

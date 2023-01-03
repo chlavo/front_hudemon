@@ -7,6 +7,9 @@
     <meta name="generator" content="PyScripter">
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <py-env>
+      - pandas
+    </py-env>    
   </head>
   <body>
     <py-config>
@@ -14,17 +17,16 @@
       from = "https://raw.githubusercontent.com/chlavo/front_hudemon/main/"
       files = ["data.py"]
       terminal = true
-    </py-config>
-    <py-env>
-      - pandas
-    </py-env>
 
-    <py-script>
+    </py-config>
+
+
+    <py-script src="main.py">
       import pandas as pd
       df = pd.DataFrame({
             "name":["karel", "ondrej"],
             "vek":[45, 68]
-      })
+            })
       output3 = Element("myPandas")
       output3.write(df.head())
       
