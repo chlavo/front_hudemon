@@ -14,12 +14,19 @@
       from = "https://raw.githubusercontent.com/chlavo/front_hudemon/main/"
       files = ["data.py"]
       terminal = true
-      packages = ['pandas']
     </py-config>
-
+    <py-env>
+      - pandas
+    </py-env>
 
     <py-script src="main.py">
-
+      import pandas as pd
+      df = pd.DataFrame({
+            "name":["karel", "ondrej"],
+            "vek":[45, 68]
+      })
+      output3 = Element("myPandas")
+      output3.write(df.head())
       
     </py-script>
     <py-repl auto-generate = "true"></py-repl> 
